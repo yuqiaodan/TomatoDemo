@@ -34,7 +34,6 @@ class AdDemoActivity : AppCompatActivity() {
         initAdLoader()
     }
 
-
     private fun initAdLoader() {
         //配置adLoader 测试专用广告单元 ID
         val adLoader = AdLoader.Builder(this, "ca-app-pub-3940256099942544/2247696110")
@@ -42,7 +41,6 @@ class AdDemoActivity : AppCompatActivity() {
                 // Show the ad.
                 val adView =
                     layoutInflater.inflate(R.layout.ad_unified, null) as UnifiedNativeAdView
-
                 populateUnifiedNativeAdView(unifiedNativeAd, adView)
                 frameLayout_ad.addView(adView)
             }
@@ -178,8 +176,7 @@ class AdDemoActivity : AppCompatActivity() {
             refresh_button.isEnabled = true
         }*/
     }
-
-
+    
     companion object {
         fun actionStart(context: Context) {
             val intent: Intent = Intent(context, AdDemoActivity::class.java)
