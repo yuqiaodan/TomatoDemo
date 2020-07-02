@@ -124,9 +124,15 @@ class AdDemoActivity : AppCompatActivity() {
         if (nativeAd.starRating == null) {
             adView.starRatingView.visibility = View.INVISIBLE
         } else {
+
+
+
             (adView.starRatingView as RatingBar).rating = nativeAd.starRating!!.toFloat()
             adView.starRatingView.visibility = View.VISIBLE
         }
+
+
+
 
         if (nativeAd.advertiser == null) {
             adView.advertiserView.visibility = View.INVISIBLE
