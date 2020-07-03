@@ -8,6 +8,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import qiaodan.yu.tomatodemo.ui.AdDemoActivity
 import qiaodan.yu.tomatodemo.R
+import qiaodan.yu.tomatodemo.ui.TTAdDemoActivity
 
 /**
  * kotlin中最标准的adapter写法 《第一行代码》P184
@@ -28,6 +29,9 @@ class HomeListAdapter(private val items: List<String>) :
             when(holder.adapterPosition){
                 0->{
                     AdDemoActivity.actionStart(parent.context)}
+                1->{
+                    TTAdDemoActivity.actionStart(parent.context)
+                }
             }
 
         }

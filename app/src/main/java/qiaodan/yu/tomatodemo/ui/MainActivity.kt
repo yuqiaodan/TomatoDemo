@@ -22,8 +22,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         initView()
         initData()
-        //初始化广告SDK  广告应用 ID  （备注 ：Firebase 应用ID已经在google-service.json中配置了）
-        MobileAds.initialize(this, "ca-app-pub-3940256099942544~3347511713")
     }
 
     private fun initView() {
@@ -36,7 +34,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun initData(){
         mData.add("Firebase接入\n&\n广告")
-        mData.add("null")
+        mData.add("穿山甲广告接入")
         mData.add("null")
         mData.add("null")
         mData.add("null")

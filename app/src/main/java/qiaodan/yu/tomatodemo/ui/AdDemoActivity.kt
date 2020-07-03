@@ -12,6 +12,7 @@ import android.widget.TextView
 import com.google.android.gms.ads.AdListener
 import com.google.android.gms.ads.AdLoader
 import com.google.android.gms.ads.AdRequest
+import com.google.android.gms.ads.MobileAds
 import com.google.android.gms.ads.formats.MediaView
 import com.google.android.gms.ads.formats.NativeAdOptions
 import com.google.android.gms.ads.formats.UnifiedNativeAd
@@ -31,6 +32,8 @@ class AdDemoActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_ad_demo)
+        //初始化广告SDK  广告应用 ID  （备注 ：Firebase 应用ID已经在google-service.json中配置了）
+        MobileAds.initialize(this, "ca-app-pub-3940256099942544~3347511713")
         initAdLoader()
     }
 
