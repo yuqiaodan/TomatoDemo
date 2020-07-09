@@ -8,6 +8,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import qiaodan.yu.tomatodemo.ui.AdDemoActivity
 import qiaodan.yu.tomatodemo.R
+import qiaodan.yu.tomatodemo.ui.DrawableStudy
 import qiaodan.yu.tomatodemo.ui.TTAdDemoActivity
 
 /**
@@ -28,9 +29,13 @@ class HomeListAdapter(private val items: List<String>) :
 
             when(holder.adapterPosition){
                 0->{
-                    AdDemoActivity.actionStart(parent.context)}
+                    AdDemoActivity.actionStart(parent.context)
+                }
                 1->{
                     TTAdDemoActivity.actionStart(parent.context)
+                }
+                2->{
+                    DrawableStudy.actionStart(parent.context)
                 }
             }
 
