@@ -12,7 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.DrawableStudy"></activity>
+        <activity android:name=".ui.MyWebActivity"></activity>
+        <activity android:name=".ui.DrawableStudyActivity" />
         <activity android:name=".ui.TTAdDemoActivity" />
 
         <meta-data

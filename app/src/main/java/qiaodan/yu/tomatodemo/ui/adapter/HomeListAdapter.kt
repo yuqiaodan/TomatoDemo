@@ -8,7 +8,8 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import qiaodan.yu.tomatodemo.ui.AdDemoActivity
 import qiaodan.yu.tomatodemo.R
-import qiaodan.yu.tomatodemo.ui.DrawableStudy
+import qiaodan.yu.tomatodemo.ui.DrawableStudyActivity
+import qiaodan.yu.tomatodemo.ui.MyWebActivity
 import qiaodan.yu.tomatodemo.ui.TTAdDemoActivity
 
 /**
@@ -35,7 +36,10 @@ class HomeListAdapter(private val items: List<String>) :
                     TTAdDemoActivity.actionStart(parent.context)
                 }
                 2->{
-                    DrawableStudy.actionStart(parent.context)
+                    DrawableStudyActivity.actionStart(parent.context)
+                }
+                3->{
+                    MyWebActivity.actionStart(parent.context,"https://www.jianshu.com/u/cbe941dea753")
                 }
             }
 
