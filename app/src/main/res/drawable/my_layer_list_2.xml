@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/my_shape_2" />
+    <item
+        android:bottom="5dp"
+        android:drawable="@drawable/my_shape_1"
+        android:right="5dp" />
+</layer-list>
+
+
+    <!--
+    <item>
+    <bitmap android:src="@drawable/strawberry1"  android:gravity="center"/>
+    </item>
+    <item
+    android:left="30dp"
+    android:top="30dp">
+    <bitmap android:src="@drawable/strawberry2"  android:gravity="center"/>
+
+    </item>
+    <item
+    android:left="60dp"
+    android:top="60dp">
+    <bitmap android:src="@drawable/strawberry3"  android:gravity="center"/>
+    </item>-->
