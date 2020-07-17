@@ -37,7 +37,8 @@ class MainActivity : AppCompatActivity() {
         mData.add("穿山甲广告接入")
         mData.add("Drawable\n学习")
         mData.add("WebView\nDemo")
-        mData.add("null")
+        mData.add("腾讯TBS接入")
+        mData.add("Glide用法")
         mAdapter.notifyDataSetChanged()
     }
 

@@ -31,6 +31,22 @@ class MyWebActivity : AppCompatActivity() {
         webView.settings.javaScriptEnabled = true
         webView.webViewClient = getWebViewClient()
         webView.webChromeClient=getWebChromeClient()
+        // 设置出现缩放工具 
+        webView.settings.builtInZoomControls = true
+//扩大比例的缩放 
+        webView.settings.useWideViewPort = true
+// 设置可以支持缩放 
+        webView.settings.setSupportZoom(true)
+        webView.settings.layoutAlgorithm=WebSettings.LayoutAlgorithm.SINGLE_COLUMN
+        webView.settings.loadWithOverviewMode=true
+
+        webView.setDownloadListener(DownloadListener { url, _, _, _, _ -> // H5中包含下载链接的话让外部浏览器去处理
+            val intent = Intent(Intent.ACTION_VIEW)
+            intent.addCategory(Intent.CATEGORY_BROWSABLE)
+            intent.data = Uri.parse(url)
+            startActivity(intent)
+        })
+
         webView.loadUrl(webUrl)
         back_btn.setOnClickListener {
             if(webView.canGoBack()){
@@ -46,7 +62,7 @@ class MyWebActivity : AppCompatActivity() {
         if(!TextUtils.isEmpty(url)){
             webUrl=url
         }else{
-            webUrl="https://www.baidu.com/"//海外改为谷歌
+            webUrl="http://weixin.qq.com/r/vz9tdcjEOZVGrYwW92qt"//海外改为谷歌
         }
     }
 

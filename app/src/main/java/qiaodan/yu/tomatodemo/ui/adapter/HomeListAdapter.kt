@@ -6,11 +6,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import qiaodan.yu.tomatodemo.ui.AdDemoActivity
 import qiaodan.yu.tomatodemo.R
-import qiaodan.yu.tomatodemo.ui.DrawableStudyActivity
-import qiaodan.yu.tomatodemo.ui.MyWebActivity
-import qiaodan.yu.tomatodemo.ui.TTAdDemoActivity
+import qiaodan.yu.tomatodemo.ui.*
 
 /**
  * kotlin中最标准的adapter写法 《第一行代码》P184
@@ -39,7 +36,13 @@ class HomeListAdapter(private val items: List<String>) :
                     DrawableStudyActivity.actionStart(parent.context)
                 }
                 3->{
-                    MyWebActivity.actionStart(parent.context,"https://www.jianshu.com/u/cbe941dea753")
+                    MyWebActivity.actionStart(parent.context)
+                }
+                4->{
+                    MyTbsActivity.actionStart(parent.context)
+                }
+                5->{
+                    MyGlideActivity.actionStart(parent.context)
                 }
             }
 
