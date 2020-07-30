@@ -59,7 +59,7 @@ class MyWebActivity : AppCompatActivity() {
 
     private fun dealIntent(){
        val url=intent.getStringExtra("url")
-        if(!TextUtils.isEmpty(url)){
+        if(url!=null){
             webUrl=url
         }else{
             webUrl="http://weixin.qq.com/r/vz9tdcjEOZVGrYwW92qt"//海外改为谷歌

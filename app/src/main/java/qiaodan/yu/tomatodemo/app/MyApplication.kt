@@ -1,6 +1,7 @@
 package qiaodan.yu.tomatodemo.app
 
 import android.app.Application
+import android.content.Context
 import android.util.Log
 import androidx.multidex.MultiDex
 import com.bytedance.sdk.openadsdk.TTAdConfig
@@ -15,8 +16,19 @@ class MyApplication :Application(){
         super.onCreate()
         //引入sdk后 方法太多 使用MultiDex解决
         MultiDex.install(this)
-        initTTAdSdk()
-        initTBS()
+        //initTTAdSdk()
+       //initTBS()
+
+        context=this
+    }
+
+    companion object {
+        private var context: Context? = null
+
+
+        fun getContext(): Context {
+            return context!!
+        }
     }
 
     //穿山甲广告SDK

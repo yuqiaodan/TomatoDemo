@@ -44,6 +44,9 @@ class HomeListAdapter(private val items: List<String>) :
                 5->{
                     MyGlideActivity.actionStart(parent.context)
                 }
+                6->{
+                    WifiConfigActivity.actionStart(parent.context)
+                }
             }
 
         }

@@ -4,13 +4,15 @@
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
 
-
+    <color name="text_black">#3A3A3A</color>
 
     <color name="text_gray">#797979</color>
     <color name="text_gray2">#9D9D9D</color>
     <color name="text_gray3">#555555</color>
     <color name="text_gray4">#6D7A80 </color>
     <color name="text_hint_gray">#CDCDCD</color>
+    <color name="result_color_write">#95AEAE</color>
+    <color name="result_color_dark">#2C3A3A</color>
 
     <color name="pink">#ffc0cb</color><!--粉红色 -->
     <color name="lightpink">#ffb6c1</color><!--亮粉红色 -->
