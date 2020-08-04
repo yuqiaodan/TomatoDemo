@@ -47,6 +47,9 @@ class HomeListAdapter(private val items: List<String>) :
                 6->{
                     WifiConfigActivity.actionStart(parent.context)
                 }
+                7->{
+                    QRCodeActivity.actionStart(parent.context)
+                }
             }
 
         }

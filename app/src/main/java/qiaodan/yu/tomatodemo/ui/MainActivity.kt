@@ -40,6 +40,7 @@ class MainActivity : AppCompatActivity() {
         mData.add("腾讯TBS接入")
         mData.add("Glide用法")
         mData.add("wifi操作")
+        mData.add("扫描二维码")
         mAdapter.notifyDataSetChanged()
     }
 

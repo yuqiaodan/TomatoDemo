@@ -25,12 +25,9 @@ class MyGlideActivity : AppCompatActivity() {
     }
 
     private fun initView() {
-
         Glide.with(my_glide_img.context)
             .load("https://upload.jianshu.io/users/upload_avatars/19229798/14550654-c541-4a71-a201-c8b81fefcf4a.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/240/h/240")
             .into(my_glide_img)
-
-
         val content =
             "Wifi名称: testbird123\n" +
                     "Wifi密码: 88888888\n" +
